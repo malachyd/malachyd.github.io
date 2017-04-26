@@ -5,7 +5,8 @@ body {
 
 .header
 {
-	font-size: 40px;
+	font: "Times New Roman";
+	font-size: 30px;
 	font-weight: 500;
 	height:50px;
 	text-align: center;
@@ -13,14 +14,16 @@ body {
 
 .sub_header
 {
+	font: "Times New Roman";
 	font-weight: 400;
-	font-size: 32px;
+	font-size: 28px;
 	margin-left: 10px;
 }
 
 .content
 {
-	font-size: 20px;
+	font: "Times New Roman";
+	font-size: 22px;
 	font-weight: 200;
 	margin-left: 35px;
 	margin-bottom: 10px;

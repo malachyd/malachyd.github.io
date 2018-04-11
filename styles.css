@@ -52,6 +52,12 @@ body {
 	text-align: center;
 }
 
+.shirt_image
+{
+	margin: auto;
+	width: 50%;
+}
+
 .name
 {
 	margin: auto;

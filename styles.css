@@ -3,15 +3,6 @@ body {
 	font-size: 16pt;
 }
 
-.header
-{
-	font: "Times New Roman";
-	font-size: 30px;
-	font-weight: 500;
-	height:50px;
-	text-align: center;
-}
-
 .sub_header
 {
 	font: "Times New Roman";
@@ -70,6 +61,52 @@ body {
 	text-decoration: none;
 	font-size: 80px;
 }
+
+.price
+{
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	font-size: 40px;
+}
+#header .logo{
+	margin: 0 auto;
+}
+
+.home ul {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.home nav {
+	margin-left: auto;
+	margin-right:auto;
+	width: 230px;
+	padding-left: 70px;
+}
+
+body.home a {
+	padding-top: 7px;
+    padding-right: 40px;
+    padding-bottom: 7px;
+    padding-left: 0px;
+}
+
+.home a {
+	color: black;
+	font-family: Courier;
+}
+
+a {
+	text-decoration: none;
+}
+
 
 .links
 {

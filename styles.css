@@ -54,6 +54,7 @@ body {
 
 .shirt_image
 {
+  	width: auto;
   	height: auto;
   	margin: auto;
 	width: 50%;

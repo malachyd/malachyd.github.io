@@ -54,8 +54,10 @@ body {
 
 .shirt_image
 {
-	margin: auto;
+  	height: auto;
+  	margin: auto;
 	width: 50%;
+	text-align: center;
 }
 
 .name

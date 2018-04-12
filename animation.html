@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>BOXES</title>
+  <link href="animation.css" rel="stylesheet">
+</head>
+
+<p><button class="move-button">Move items</button></p>
+
+<div class="grid grid-a">
+  <div class="grid-item1"></div>
+  <div class="grid-item2"></div>
+  <div class="grid-item3"></div>
+  <div class="grid-item4"></div>
+  <div class="grid-item5"></div>
+  <div class="grid-item6"></div>
+  <div class="grid-item7"></div>
+  <div class="grid-item8"></div>
+  <div class="grid-item9"></div>
+  <div class="grid-item10"></div>
+  <div class="grid-item11"></div>
+  <div class="grid-item12"></div>
+  <div class="grid-item13"></div>
+  <div class="grid-item14"></div>
+  <div class="grid-item15"></div>
+  <div class="grid-item16"></div>
+  <div class="grid-item17"></div>
+  <div class="grid-item18"></div>
+  <div class="grid-item19"></div>
+  <div class="grid-item20"></div>
+  <div class="grid-item21"></div>
+  <div class="grid-item22"></div>
+  <div class="grid-item23"></div>
+  <div class="grid-item24"></div>
+  <div class="grid-item25"></div>
+</div>
+
+<div class="grid"></div>
+
+<script>
+  var moveButton = document.querySelector('.move-button');
+var items = document.querySelectorAll('.grid-a .grid-item');
+var isMoved = false;
+
+moveButton.onclick = function() {
+  // toggle flag
+  isMoved = !isMoved;
+
+  for ( var i=0; i < items.length; i++ ) {
+    // get function in closure, so i can iterate
+    var toggleItemMove = getToggleItemMove( i );
+    // reverse stagger order
+    var delay = isMoved ? ( items.length - i - 1 ) : i;
+    delay *= 50;
+    // stagger transition with setTimeout
+    setTimeout( toggleItemMove, delay );
+  }
+};
+
+function getToggleItemMove( i ) {
+  var item = items[i];
+  return function() {
+    item.classList.toggle('is-moved');
+  }
+}
+</script>
+
+</html>

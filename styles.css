@@ -93,6 +93,7 @@ ul {
 	margin: auto;
 	width: 50%;
 	text-align: center;
+	position: relative;
 }
 
 body.home a {
